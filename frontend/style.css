@@ -1,64 +1,103 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0f172a;
-    color: white;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-header {
-    text-align: center;
-    padding: 40px;
+body{
+    background:#0f172a;
+    color:white;
 }
 
-header h1 {
-    font-size: 45px;
-    margin-bottom: 10px;
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#111827;
+    position:sticky;
+    top:0;
 }
 
-header p {
-    font-size: 18px;
-    color: #94a3b8;
+nav h2{
+    color:#3b82f6;
+    font-size:32px;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 40px;
+.menu{
+    display:flex;
+    gap:30px;
 }
 
-.card {
-    background: #1e293b;
-    padding: 30px;
-    width: 300px;
-    border-radius: 20px;
-    box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+.menu a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
 }
 
-.card h2 {
-    text-align: center;
+.menu a:hover{
+    color:#3b82f6;
 }
 
-input {
-    width: 90%;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 8px;
-    border: none;
+.login-btn{
+    padding:10px 20px;
+    background:#3b82f6;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
 }
 
-button {
-    width: 100%;
-    padding: 12px;
-    margin-top: 15px;
-    border: none;
-    border-radius: 8px;
-    background: #3b82f6;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
+.hero{
+    text-align:center;
+    padding:120px 10%;
 }
 
-button:hover {
-    background: #2563eb;
+.hero h1{
+    font-size:58px;
+    margin-bottom:25px;
+}
+
+.hero p{
+    max-width:750px;
+    margin:auto;
+    color:#cbd5e1;
+    font-size:20px;
+    line-height:1.7;
+}
+
+.hero-buttons{
+    margin-top:45px;
+}
+
+.primary,
+.secondary{
+    padding:15px 35px;
+    font-size:18px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    margin:10px;
+    transition:.3s;
+}
+
+.primary{
+    background:#3b82f6;
+    color:white;
+}
+
+.primary:hover{
+    background:#2563eb;
+}
+
+.secondary{
+    background:transparent;
+    color:white;
+    border:2px solid white;
+}
+
+.secondary:hover{
+    background:white;
+    color:#0f172a;
 }
