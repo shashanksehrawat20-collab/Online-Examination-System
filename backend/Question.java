@@ -8,8 +8,9 @@ public class Question {
     private String optionD;
     private String correctAnswer;
 
-    public Question(int questionId, String questionText, String optionA,
-                    String optionB, String optionC, String optionD,
+    public Question(int questionId, String questionText,
+                    String optionA, String optionB,
+                    String optionC, String optionD,
                     String correctAnswer) {
 
         this.questionId = questionId;
@@ -21,7 +22,36 @@ public class Question {
         this.correctAnswer = correctAnswer;
     }
 
+    public int getQuestionId() {
+        return questionId;
+    }
+
+    public String getQuestionText() {
+        return questionText;
+    }
+
+    public String getOptionA() {
+        return optionA;
+    }
+
+    public String getOptionB() {
+        return optionB;
+    }
+
+    public String getOptionC() {
+        return optionC;
+    }
+
+    public String getOptionD() {
+        return optionD;
+    }
+
+    public String getCorrectAnswer() {
+        return correctAnswer;
+    }
+
     public void displayQuestion() {
+        System.out.println("Question " + questionId + ":");
         System.out.println(questionText);
         System.out.println("A. " + optionA);
         System.out.println("B. " + optionB);
@@ -30,6 +60,6 @@ public class Question {
     }
 
     public boolean checkAnswer(String answer) {
-        return correctAnswer.equals(answer);
+        return correctAnswer.equalsIgnoreCase(answer);
     }
 }
