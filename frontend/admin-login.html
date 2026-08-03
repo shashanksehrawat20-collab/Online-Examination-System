@@ -1,38 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Login | Savoir</title>
-    <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Login | Savoir</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 </head>
+
 <body>
 
-<nav>
-    <h2>Savoir</h2>
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+<div class="logo">
+
+<i class="fa-solid fa-graduation-cap"></i>
+
+<h2>Savoir</h2>
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="#">Administrator</a></li>
+
+<li><a href="#">Support</a></li>
+
+</ul>
+
 </nav>
 
-<section class="hero">
 
-    <h1>Administrator Login</h1>
 
-    <p>
-        Secure access for administrators to manage examinations and students.
-    </p>
+<!-- ================= LOGIN ================= -->
 
-    <div class="card">
+<section class="login-container">
 
-        <input type="text" placeholder="Admin ID">
+<div class="login-card">
 
-        <input type="password" placeholder="Password">
+<div style="text-align:center;margin-bottom:30px;">
 
-        <button class="primary">Login</button>
+<i class="fa-solid fa-user-shield"
+style="font-size:70px;color:#3b82f6;"></i>
 
-    </div>
+<h2 style="margin-top:15px;">
+
+Administrator Login
+
+</h2>
+
+<p style="color:#94a3b8;">
+
+Secure access to the examination management panel
+
+</p>
+
+</div>
+
+<form>
+
+<input
+type="text"
+placeholder="Administrator ID"
+required>
+
+<input
+type="password"
+placeholder="Password"
+required>
+
+<div
+style="display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;">
+
+<label>
+
+<input type="checkbox">
+
+Remember Me
+
+</label>
+
+<a
+href="#"
+style="color:#3b82f6;">
+
+Forgot Password?
+
+</a>
+
+</div>
+
+<a href="admin-dashboard.html">
+
+<button
+type="button">
+
+Login
+
+</button>
+
+</a>
+
+</form>
+
+<hr
+style="margin:35px 0;
+border:1px solid #334155;">
+
+<div
+style="text-align:center;">
+
+<p>
+
+Return to the homepage
+
+</p>
+
+<br>
+
+<button
+class="secondary-btn"
+onclick="window.location.href='index.html'">
+
+Back to Home
+
+</button>
+
+</div>
+
+</div>
 
 </section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<h2>Savoir</h2>
+
+<p>
+
+Smart Online Examination Platform
+
+</p>
+
+<p>
+
+© 2026 All Rights Reserved
+
+</p>
+
+</footer>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
