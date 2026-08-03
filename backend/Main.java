@@ -55,6 +55,7 @@ public class Main {
                 case 4:
                     System.out.println("Thank You!");
                     System.exit(0);
+                    break;
 
                 default:
                     System.out.println("Invalid Choice");
